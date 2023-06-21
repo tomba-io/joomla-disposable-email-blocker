@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.7" type="plugin" group="content" method="upgrade">
+    <name>plg_content_tomba</name>
+    <author>Tomba Email Finder</author>
+    <creationDate>June 2023</creationDate>
+    <copyright>Copyright (C) 2023 Tomba Email Finder</copyright>
+    <license>GNU General Public License, version 2</license>
+    <authorEmail>support@tomba.io</authorEmail>
+    <authorUrl>tomba.io</authorUrl>
+    <version>1.0</version>
+    <description>PLG_CONTENT_TOMBA_DESCRIPTION</description>
+    <files>
+        <filename plugin="tomba">tomba.php</filename>
+        <folder>admin</folder>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_content_tomba.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_content_tomba.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params" addfieldpath="/plugins/content/tomba/admin/">
+            <!-- PLUGIN -->
+            <fieldset name="basic">
+                <!-- label="Custom Error Settings" -->
+                <field name="message_disposable" required="true" type="text" label="PLG_CONTENT_TOMBA_DISPOSABLE_LABEL" description="PLG_CONTENT_TOMBA_DISPOSABLE_DESC" default="Abuses, strongly encourage you to stop using disposable email." />
+                <field name="webmail_message" required="true" type="text" label="PLG_CONTENT_TOMBA_WEBMAIL_LABEL" description="PLG_CONTENT_TOMBA_WEBMAIL_DESC" default="Warning, You can create an account with this email address, but we strongly encourage you to use a professional email address." />
+                <field name="webmail_block" type="radio" label="PLG_CONTENT_TOMBA_WEBMAILB_LABEL" description="PLG_CONTENT_TOMBA_WEBMAILB_DESC" default="0">
+                    <option value="0">NO</option>
+                    <option value="1">YES</option>
+                </field>
+            </fieldset>
+            <!-- ABOUT -->
+            <fieldset name="ABOUT">
+                <field name="about" type="about" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
