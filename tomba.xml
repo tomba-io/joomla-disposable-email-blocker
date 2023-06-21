@@ -35,4 +35,8 @@
             </fieldset>
         </fields>
     </config>
+    <!-- Update server Definition -->
+    <updateservers>
+        <server type="extension" priority="1" name="Joomla Disposable email blocker Update Site">https://raw.githubusercontent.com/tomba-io/joomla-disposable-email-blocker/master/manifest.xml</server>
+    </updateservers>
 </extension>
