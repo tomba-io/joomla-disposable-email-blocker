@@ -1,4 +1,9 @@
 <?php
+
+/**
+ * @license		GNU General Public License version 2
+ */
+
 defined('_JEXEC') or die;
 
 class JFormFieldAbout extends JFormField
